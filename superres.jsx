@@ -17,6 +17,7 @@ var SuperResResizeAndAlign = function () {
 		curLayer = docRef.artLayers[i];
 		//$.writeln(i + " : " +curLayer .name);
 		curLayer.selected = true;
+		curLayer.opacity = Math.round((1.0 / i) * 100);
         }
 }
 
